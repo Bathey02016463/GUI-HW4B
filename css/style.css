@@ -1,0 +1,77 @@
+/*
+File: style.css
+Name: Aneesh Bathey
+Email: aneesh_bathey@student.uml.edu
+*/
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/* Center multiplication table */
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Table cells */
+th, td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+/* Table headers */
+th {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Make invalid input text red */
+#input-form p {
+    color: red;
+}
+
+/* Scrolling enabled if height of table is greater than 300px */
+.mult-table {
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* Make it stick to the scrolling frame */
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+/* Make it stick to the scrolling frame */
+tbody th {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+}
+
+/* For the top left corner of the table */
+thead th:first-child {
+    z-index: 3;
+}
+
+/* Add padding below submit button so there's space between it and multiplication table */
+#tabs {
+    padding-bottom: 50px;
+}
+
+/* Customize error message text from jQuery */
+label.error {
+    color: red;
+}
+
+#clear-tabs {
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
